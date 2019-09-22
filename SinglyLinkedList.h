@@ -28,6 +28,9 @@ private:
     Node<T> *tail;
 public:
     SinglyLinkedList() : size(0), head(nullptr), tail(nullptr) {}
+    ~SinglyLinkedList(){
+        clear();
+    }
 
     /*
      *Insert at the beginning; this coming element will become the head
