@@ -130,7 +130,11 @@ public:
             return n;
         }
     }
-
+    
+    /*
+     * return the address node of the specified data if exists
+     *  throws an exception otherwise
+     */
     Node<T> *getElement(T data) {
         if (!size) throw std::out_of_range("List is empty!");
         for (Node<T> *n = head; n != tail; n = n->next)
